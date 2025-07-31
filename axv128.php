@@ -4,7 +4,7 @@ ini_set('display_errors', '1');
 ini_set('display_startup_errors', '1');
 error_reporting(E_ALL);
 
-$password = "1d3eab2a00e5e7c65d756e327fc8026d"; //
+$password = "1d3eab2a00e5e7c65d756e327fc8026d"; 
 if(isset($_POST['password'])) {
     if(md5($_POST['password']) == $password) {
         setcookie('auth', md5($password));
